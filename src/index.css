@@ -1,42 +1,59 @@
-*{
+* {
   margin: 0;
 }
 
-.top-pane{
+.top-pane {
   background-color: lightslategray;
 }
 
-.pane{
+.pane {
   height: 50vh;
   display: flex;
 }
 
-.editor__container{
+.editor__container {
   flex-grow: 1;
-  flex-basis: 0; 
+  flex-basis: 0;
   /* flex basis makes them same size */
   display: flex;
   flex-direction: column;
-  padding: .5rem;
-  background-color: #3D3D45;
+  padding: 0.5rem;
+  background-color: #3d3d45;
 }
 
-.editor__title{
+.editor__title {
   display: flex;
   justify-content: space-between;
   background-color: #29292c;
   padding: 1rem;
   color: white;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
-.CodeMirror{
+.CodeMirror {
   height: 100% !important;
 }
 
 .react-codemirror2 {
   flex-grow: 1;
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.collapsed {
+  flex-grow: 0;
+}
+
+.collapsed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
+
+.editor__button{
+  margin-left: .5rem;
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
 }
